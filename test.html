@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="jquery-2.1.4.min.js"></script>
+<script src="jquery.caret.js"></script>
+<script src="keyMap.js"></script>
+<script type="text/javascript">
+function callMe ()
+{
+	$("#editable").bind('input propertychange', function() {
+        editText("#editable");   
+	});
+}
+</script>
+</head>
+<body onload="callMe()">
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<textarea rows="4" cols="50" id="editable" >
+
+</textarea>
+</body>
+</html>

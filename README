@@ -1,0 +1,15 @@
+Author: Michael Goldsmith
+
+This chrome extension allows users to use the current Duolingo web app in 
+Ukranian without having to keep changing the keyboard settings.
+
+
+Note: This only supports keyboards UK and US English keyboards.
+If the user interface is to change it may not work.
+Keep up the hard work Ukranian learners!!!
+
+Credit: 
+- Luke Morton for the JQuery Caret library 
+- Users here:  http://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript
+  who created an easy way to replace characters.
+	
