@@ -3,30 +3,32 @@
   "manifest_version": 2,
 	"version": "1.0",
   "description": "Converts Keyboard into Ukranian for Ukranian questions",
-  "icons": { "128": "ukr128.png" },
+  "icons": { 	"128": "ukr128.png",
+							"19": "ukr19.png",
+							"38": "ukr38.png" },
  
-
+  "background": {
+		"scripts": ["backgroundForPageAction.js"],
+    "persistent": false
+  },
 	
   "permissions": [
 		"activeTab",
-		"https://www.duolingo.com/skill/*", 
-		"https://www.duolingo.com/practice*"],
+		"*://www.duolingo.com/*", 
+		    "declarativeContent"],
+		
 		
   "author": "Michael Goldsmith",
 		
   "page_action": {
     "default_title": "Ukranian Duolingo Extension",
-    "default_icon": {"19": "ukr19.png", 
-            "38": "ukr38.png"}, 
-		  "background": {
-				"persistent": false
-				}
+    "default_icon": {"38": "ukr38.png"},
+		"default_popup": "popup.html"
   },
 	
-	  "content_scripts": [
+	"content_scripts": [
     {
-      "matches": [		"https://www.duolingo.com/skill/*", 
-											"https://www.duolingo.com/practice*"],
+      "matches": [		"*://www.duolingo.com/*"],
       "js": ["jquery-2.1.4.min.js", "jquery.caret.js", "keyMap.js", "runScript.js"]
     }
   ]
