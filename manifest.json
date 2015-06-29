@@ -1,11 +1,12 @@
 {
-  "name": "Mike's Ukranian Extension",
+  "name": "Mike's Duolingo Cyrillic Extension",
   "manifest_version": 2,
-	"version": "1.0",
-  "description": "Converts Keyboard into Ukranian for Ukranian questions",
+	"version": "1.2",
+  "description": "Converts Keyboard into the respective languages 
+  for the questions in the Duolingo Ukranian and Russian courses",
   "icons": { 	"128": "ukr128.png",
-							"19": "ukr19.png",
-							"38": "ukr38.png" },
+							"48": "ukr48.png",
+							"16": "ukr16.png" },
  
   "background": {
 		"scripts": ["backgroundForPageAction.js"],
@@ -22,7 +23,7 @@
 		
   "page_action": {
     "default_title": "Ukranian Duolingo Extension",
-    "default_icon": {"38": "ukr38.png"},
+    "default_icon": {"48": "ukr48.png"},
 		"default_popup": "popup.html"
   },
 	
